@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Product Customizer</title>
+    <link rel="stylesheet" href="style4.css" />
+   
+  </head>
+
+  <body>
+    <div class="product">
+      <img src="hat1.png" class="img-1" />
+      <img src="hat2.png" class="img-2" />
+
+      <div class="color"></div>
+      <div class="text-overlay"></div>
+      <div class="clipart-overlay"></div>
+    </div>
+
+    <div>
+      <h1>Hat Customizer</h1>
+      <p>Customize your hat with colors, text, and clipart!</p>
+
+      <b>Customize hat color:</b>
+      <input type="color" class="color-input" value="#ff0000" />
+      <br><br>
+
+      <b>Add Text:</b>
+      <input type="text" class="text-input" placeholder="Enter your text" />
+      <br><br>
+
+      <b>Font Size:</b>
+      <input type="number" class="font-size-input" value="20" min="10" max="100" />
+      <br><br>
+
+      <b>Font Color:</b>
+      <input type="color" class="font-color-input" value="#ffffff" />
+      <br><br>
+
+      <b>Font Face:</b>
+      <select class="font-face-input">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+      <br><br>
+
+      <button class="add-text-btn">Add Text</button>
+      <br><br>
+
+      <b>Add Clipart:</b>
+      <input type="file" class="clipart-input" accept="image/*" />
+      <br><br>
+
+      <button class="clear-btn">Clear</button>
+    </div>
+  </body>
+
+  <script defer src="script5.js"></script>
+</html>

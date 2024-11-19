@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  .product {
+    position: relative;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    overflow: hidden;
+  }
+  
+  .img-1 {
+    width: 30em;
+    z-index: 0;
+  }
+  
+  .img-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .color {
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+  }
+  
+  .text-overlay,
+  .clipart-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  
+  .draggable {
+    position: absolute;
+    cursor: move;
+  }
+  
+  .clipart {
+    resize: both;
+    overflow: hidden;
+  }
+  
+  button,
+  input,
+  select {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  
